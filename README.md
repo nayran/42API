@@ -3,7 +3,7 @@
 Um API em C que faz requisições com o cURL para a API oficial da 42, recebe um JSON, trata os dados de forma estática e armazena em um banco de dados mySQL, devolvendo informações em HTTP com o framework ulfius. A aplicação foi cointainerizada em ubuntu usando o Docker.
 
 ## IMPORTANTE
-Para utilizar essa API é necessário fazer antes a instalação do Docker.
+Para utilizar essa API é necessário fazer a instalação do Docker e ter **uid** e **secret** da API da 42.
 
 # Modo de usar
 
@@ -11,6 +11,7 @@ Para utilizar essa API é necessário fazer antes a instalação do Docker.
 
 'cd ./42labs-selection-process-nayran'
 
+Defina as variaveis UID e SECRET com suas credenciais no arquivo src/api.h
 
 Abrir dois terminais, um para deixar o servidor rodando (Terminal01), com este poderá acompanhar cada requisição recebida. O outro terminal será util para fazer as requisições (Terminal02).
 
